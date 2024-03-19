@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+   name: model-train
+spec:
+   containers:
+   - name: model-mnist
+     image: docker-model_n
+     ports:
+     - containerPort: 6379
